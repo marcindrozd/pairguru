@@ -13,6 +13,7 @@ gem 'decent_exposure'
 gem 'bootstrap-sass'
 gem 'annotate', '~> 2.6.5'
 gem 'http'
+gem 'active_model_serializers'
 
 group :development do
   gem 'rails-erd'
