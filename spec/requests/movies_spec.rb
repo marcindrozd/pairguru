@@ -8,5 +8,4 @@ describe 'Movies requests', type: :request do
       expect(page).to have_selector('h1', exact: 'Movies')
     end
   end
-
 end
