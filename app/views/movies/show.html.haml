@@ -1,13 +1,13 @@
 .well
   .media
     .media-left.media-middle
-      = image_tag movie.details.poster_url, class: "media-object"
+      = image_tag movie_details.poster_url, class: "media-object"
     .media-body
       %h4.media-heading= movie.title
       %h5 Average rating:
-      = movie.details.average_rating
+      = movie_details.average_rating
       %h5 Plot overview:
-      = movie.details.overview
+      = movie_details.overview
       %hr
       - if user_signed_in?
         %p= link_to 'Email me details about this movie', send_info_movie_path(movie), class: 'btn btn-sm btn-default'

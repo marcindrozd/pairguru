@@ -1,7 +1,7 @@
 class MovieDetailsImporter
   def call(title)
     movie = get_movie(title)
-    prepare_movie_details(movie)
+    movie ? prepare_movie_details(movie) : NullMovie.new.details
   end
 
   private
